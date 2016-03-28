@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    console.log("Getting first quote");
     getQuote();
     $("button").click(getQuote);
 });
