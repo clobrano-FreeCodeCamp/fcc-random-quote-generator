@@ -1,6 +1,7 @@
 $(document).ready(function() {
   getQuote();
   $("button").click(getQuote);
+  tweet()
 });
 
 function getQuote() {
@@ -20,4 +21,10 @@ function getQuote() {
       console.log(message + " " + exception);
     }
   });
+}
+
+
+function tweet() {
+    var quote = $("#quote").clone();
+    console.log("Quote is: " + quote);
 }
